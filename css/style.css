@@ -1,4 +1,4 @@
-@import "common.css";
+/* @import "common.css";
 @import "nav.css";
 @import "home.css";
 @import "brands.css";
@@ -7,9 +7,19 @@
 @import "contact.css";
 @import "footer.css";
 @import "loading.css";
-@import "responsive.css";
+@import "responsive.css"; */
 
 
+@import "common.min.css";
+@import "nav.min.css";
+@import "home.min.css";
+@import "brands.min.css";
+@import "product.min.css";
+@import "about.min.css";
+@import "contact.min.css";
+@import "footer.min.css";
+@import "loading.min.css";
+@import "responsive.min.css";
 
 
 
