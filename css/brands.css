@@ -1,0 +1,34 @@
+#brands {
+   padding-top: 73px;
+   padding-bottom: 135px;
+}
+
+.brand-item {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 20px;
+
+}
+
+.brand-card {
+   border-radius: 22px;
+   background: #F6F6F6;
+   padding: 46px 29px 44.74px 41px;
+   display: grid;
+   grid-template-columns: 40% 60%;
+   grid-gap: 10px;
+}
+
+.brand-card h4 {
+   padding-top: 9px;
+   color: #1E1D1D;
+   font-size: 36px;
+   font-weight: 700;
+}
+
+.brand-card p {
+   color: #8B8E99;
+   font-size: 16px;
+   font-weight: 500;
+   padding-top: 9px;
+}

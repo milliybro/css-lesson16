@@ -1,0 +1,173 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+*,
+*::after,
+*::before{
+   box-sizing: border-box;
+}
+html{
+   scroll-behavior: smooth;
+}
+.container{
+   max-width: calc(1500px - 400px - 40px);
+   margin: 0 auto;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+header{
+   background-color: #fff;
+}
+header *{
+   color: white;
+}
+li{
+   list-style-type: none;
+}
+a{
+   text-decoration: none;
+}
+#home,
+#brands,
+#product,
+#about,
+#contact {
+   padding-top: 65px;
+}
+
+#backtop {
+   position: fixed;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-radius: 50%;
+   bottom: -100px;
+   right: 25px;
+   width: 50px;
+   height: 50px;
+   z-index: -1;
+   background-color: #FFA63A;
+   animation: bgcolor infinite 1.2s;
+   transition: 0.5s;
+}
+@keyframes bgcolor{
+   0%
+   {
+      background: #e74c3c;
+   }
+   20%
+   {
+      background: #2980b9;
+   }
+   40%
+   {
+      background: #f1c40f;
+   }
+   60%
+   {
+      background: #8e44ad;
+   }
+   80%
+   {
+      background: #34495e;
+   }
+   100%
+   {
+      background: #e74c3c;
+   }
+}
+
+#backtop.backtop-show {
+   bottom: 25px;
+   z-index: 10;
+}
+
+
+#dark-light {
+   /* margin-left: 10px;
+   padding: 1.5px;
+   width: 33px !important;
+   height: 18px;
+   border-radius: 15px;
+   background-color: black;
+   appearance: none;
+   margin-top: -20px; */
+
+   position: fixed;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-top-left-radius: 50%;
+   border-bottom-left-radius: 50%;
+   top: 100px;
+   right: 0px;
+   width: 70px;
+   height: 60px;
+   z-index: 10;
+   background-color: rgb(40, 34, 102);
+   transition: 1s;
+   border: none;
+   border-top-right-radius: none;
+   border-bottom-right-radius: none;
+   object-fit: cover;
+   
+}
+
+
+.light #brands {
+   background: #000;
+}
+
+.light #product {
+   background: #000;
+}
+.light #about {
+   background: #000;
+}
+.light #contact {
+   background: #000;
+}
+.light .brand-card {
+   background-color: #2f3033;
+}
+
+.light .product-card {
+   background-color: #2f3033;
+}
+.light .item {
+   background-color: #2f3033;
+}
+.light .contact {
+   background-color: #2f3033;
+}
+.light body *{
+   color: #fff;
+}
+.light #navbar,
+.light #home{
+   background-color: #000;
+}
+.light #navbar a,
+.light #navbar h4 {
+   color: #fff;
+}
+
+.light #home h1,
+.light #home p{
+   color: #fff;
+}
+
+.light #navbar * path {
+   fill: #fff;
+}
+.light main h3,
+.light main h4{
+   color: #fff;
+}
+.light #footer{
+   background-color: #000;
+}
+.light .footer h3{
+   color: #fff;
+}

@@ -1,0 +1,86 @@
+.about-text {
+   text-align: center;
+}
+
+.about-text p {
+   padding-top: 135px;
+   padding-bottom: 5px;
+   color: #3858D6;
+   text-align: center;
+   font-size: 16px;
+   font-weight: 500;
+}
+
+.about-text h3 {
+   color: #1E1D1D;
+   text-align: center;
+   font-size: 36px;
+   font-weight: 700;
+   padding-bottom: 65px;
+}
+
+.item {
+   padding: 30px 42.69px 30px 34.32px;
+   border-radius: 22px;
+   background: #F6F6F6;
+   text-align: center;
+   display: grid;
+   grid-template-columns: 40% 60%;
+}
+
+.owl-carousel .owl-dots .owl-dot span {
+   width: 30px;
+   transition: all 0.2s ease;
+}
+
+.owl-carousel .owl-dots .owl-dot.active span {
+   width: 50px;
+   background: #3858D6;
+}
+
+.owl-carousel .owl-dots .owl-dot:hover span {
+   background: #3858D6;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+   top: 90px;
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   font-size: 30px;
+   background-color: #3858D6;
+   color: white;
+}
+
+
+.owl-carousel .owl-nav button.owl-prev {
+   left: -25px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+   right: -25px;
+}
+.item-text{
+   padding-left: 25px;
+   text-align: left;
+}
+.item-text h4 {
+   padding-top: 18px;
+   color: #1E1D1D;
+   font-size: 24px;
+   font-weight: 700;
+}
+
+.item-text p {
+   padding-top: 10px;
+   padding-bottom: 9px;
+   color: #8B8E99;
+   font-size: 16px;
+   font-weight: 500;
+}
+.item-text img{
+   max-width: 140px;
+   margin-left: -10px;
+}

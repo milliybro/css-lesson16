@@ -1,0 +1,162 @@
+#navbar {
+   position: fixed;
+   width: 100%;
+   z-index: 1;
+   opacity: 0.95;
+   background-color: #FFF;
+}
+
+.nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 18px;
+   padding-bottom: 18px;
+}
+
+.nav-logo {
+   display: flex;
+   align-items: center;
+}
+
+.nav-logo h4 {
+   color: #000;
+   font-size: 16px;
+   font-weight: 500;
+}
+
+.nav-link ul {
+   display: flex;
+   justify-content: space-between;
+   gap: 27px;
+}
+
+.brand-nav {
+   display: flex;
+   align-items: flex-end;
+}
+
+.nav-link a {
+   color: #2a2b2f;
+   font-size: 16px;
+   font-weight: 500;
+   transition: 0.5s;
+}
+.nav-link a:hover{
+   color: #3858D6;
+   font-weight: 900;
+}
+
+.nav-acc {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 15.5px;
+}
+
+.korzinka {
+   position: relative;
+}
+
+.box-number {
+   position: absolute;
+   top: -3px;
+   right: -3px;
+   width: 13px;
+   height: 13px;
+   border-radius: 13px;
+   background: #3858D6;
+}
+
+.box-number p {
+   color: #000;
+   font-size: 10px;
+   font-weight: 500;
+   padding-left: 4px;
+}
+
+.hamburger {
+   display: none;
+}
+
+.navbar-shrink {
+   margin-top: -10px;
+   margin-bottom: -20px;
+   box-shadow: 5px 0 10px 3px #fff;
+   transition: 0.5s;
+}
+
+#navbar-responsive {
+   position: fixed;
+   background: url(../images/background.png);
+   background: #fff;
+   top: 0;
+   bottom: 0;
+   left: -100%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: 0.5s;
+}
+
+.res-nav-list {
+   list-style-type: none;
+
+}
+
+.res-nav-item {
+   margin: 30px 0px;
+   text-align: center;
+
+}
+
+.res-nav-link {
+   font-size: 30px;
+   color: #000;
+   text-decoration: none;
+
+}
+
+.res-nav-btn {
+   padding: 10px 20px;
+   font-size: 30px;
+}
+
+#navbar-close {
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+}
+
+.dropdown {
+   position: relative;
+}
+
+.dropdown-content {
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   opacity: 0;
+   z-index: -1;
+   top: 10px;
+   transition: 1s;
+   /* 
+   list-style-type: none;
+   background-color: #696969;
+   background-color: #08546C;
+   border: 2px solid #fff; */
+}
+
+.dd-link>a {
+   color: #000
+}
+
+.dropdown:hover .dropdown-content {
+   opacity: 1;
+   z-index: -1;
+   top: 20px;
+}

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="css/style.css">
+
+   <title>Document</title>
+</head>
+
+<body>
+   <div id="loader">
+      <div class="loader"></div>
+   </div>
+   <a id="backtop" href="#">
+      <img src="images/arrow.svg" alt="arrow">
+   </a>
+
+   <button id="dark-light">
+      <img src="images/night.svg">
+   </button>
+   <header>
+      <nav id="navbar">
+         <div class="container nav">
+            <div class="nav-logo">
+               <svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" width="25">
+                  <path
+                     d="m366-80-47-171q-55-35-87-95t-32-134q0-74 32-134.5t87-94.5l47-171h228l47 171q55 34 87 94.5T760-480q0 74-32 134t-87 95L594-80H366Zm114-180q92 0 156-64t64-156q0-92-64-156t-156-64q-92 0-156 64t-64 156q0 92 64 156t156 64Zm-87-484q23-7 44.5-10.5T480-758q21 0 42.5 3.5T567-744l-18-76H411l-18 76Zm18 604h138l18-76q-23 6-44.5 9.5T480-203q-21 0-42.5-3.5T393-216l18 76Zm-18-680h174-174Zm18 680h-18 174-156Z" />
+               </svg>
+
+               <h4>Mohid</h4>
+            </div>
+            <div class="nav-link">
+               <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#brands" class="brand-nav">
+                        Brands
+                        <img src="images/dropdown.svg">
+                        <ul class="dropdown-content">
+                           <li class="dd-item"><a href="#brands" class="dd-link">Apple</a></li>
+                           <li class="dd-item"><a href="#brands" class="dd-link">Xiaomi</a></li>
+                           <li class="dd-item"><a href="#brands" class="dd-link">FitBit</a></li>
+                           <li class="dd-item"><a href="#brands" class="dd-link">Hoco</a></li>
+                        </ul>
+                     </a></li>
+                  <li><a href="#product">Recent Products</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#about">About</a></li>
+               </ul>
+            </div>
+            <div class="nav-acc">
+               <svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" width="25">
+                  <path
+                     d="M796-121 533-384q-30 26-69.959 40.5T378-329q-108.162 0-183.081-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.125-57.5T572-585q0-81-56.875-138.5T377-781q-82.083 0-139.542 57.5Q180-666 180-585t57.458 138.5Q294.917-389 377-389Z" />
+               </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" width="25">
+                  <path
+                     d="M480-481q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM160-160v-94q0-38 19-65t49-41q67-30 128.5-45T480-420q62 0 123 15.5t127.921 44.694q31.301 14.126 50.19 40.966Q800-292 800-254v94H160Zm60-60h520v-34q0-16-9.5-30.5T707-306q-64-31-117-42.5T480-360q-57 0-111 11.5T252-306q-14 7-23 21.5t-9 30.5v34Zm260-321q39 0 64.5-25.5T570-631q0-39-25.5-64.5T480-721q-39 0-64.5 25.5T390-631q0 39 25.5 64.5T480-541Zm0-90Zm0 411Z" />
+               </svg>
+               <div class="korzinka">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" width="25">
+                     <path
+                        d="M286.788-81Q257-81 236-102.212q-21-21.213-21-51Q215-183 236.212-204q21.213-21 51-21Q317-225 338-203.788q21 21.213 21 51Q359-123 337.788-102q-21.213 21-51 21Zm400 0Q657-81 636-102.212q-21-21.213-21-51Q615-183 636.212-204q21.213-21 51-21Q717-225 738-203.788q21 21.213 21 51Q759-123 737.788-102q-21.213 21-51 21ZM235-741l110 228h288l125-228H235Zm-30-60h589.074q22.964 0 34.945 21Q841-759 829-738L694-495q-11 19-28.559 30.5Q647.881-453 627-453H324l-56 104h491v60H277q-42 0-60.5-28t.5-63l64-118-152-322H51v-60h117l37 79Zm140 288h288-288Z" />
+                     </svg>
+                  <div class="box-number">
+                     <p>1</p>
+                  </div>
+               </div>
+               <div class="hamburger" id="navbar-open">
+                  <img src="images/menu.svg" alt="hamburger-logo">
+               </div>
+               <div id="navbar-responsive">
+                  <ul class="res-nav-list">
+                     <li class="res-nav-item"><a href="#home" class="res-nav-link">Home</a></li>
+                     <li class="res-nav-item"><a href="brands" class="res-nav-link">Brands</a></li>
+                     <li class="res-nav-item"><a href="#product" class="res-nav-link">Recent Products</a></li>
+                     <li class="res-nav-item"><a href="#contact" class="res-nav-link">Contact</a></li>
+                     <li class="res-nav-item"><a href="#about" class="res-nav-link">About</a></li>
+                  </ul>
+                  <button id="navbar-close">
+                     <img src="images/close.svg" alt="close">
+                  </button>
+
+               </div>
+            </div>
+         </div>
+      </nav>
+      <section id="home">
+         <div class="container home">
+            <div class="home-left">
+               <h1>Discover Most Suitable Watches</h1>
+               <p>
+                  Find the best, reliable, and cheap smart watches here. We focus on product quality. Here you can find
+                  smart watches of almost all brands. So why you are waiting? Just order now!
+               </p>
+               <div class="search">
+                  <img src="images/find.svg">
+                  <input type="text" placeholder="Find the best brands">
+                  <div class="search-button">
+                     <button>
+                        <a href="#">Search</a>
+                     </button>
+                  </div>
+               </div>
+            </div>
+            <div class="home-right">
+               <img src="images/home-watch.png">
+            </div>
+         </div>
+      </section>
+   </header>
+   <main>
+      <section id="brands">
+         <div class="container brands">
+            <div class="brand-item">
+               <div class="brand-card">
+                  <div class="br-card-left">
+                     <img src="images/apple.png">
+                  </div>
+                  <div class="br-card-right">
+                     <h4>
+                        Apple
+                     </h4>
+                     <p>
+                        Apple is one of the most famous smart watches providing company.
+                     </p>
+                  </div>
+               </div>
+               <div class="brand-card">
+                  <div class="br-card-left">
+                     <img src="images/xiaomi.png">
+                  </div>
+                  <div class="br-card-right">
+                     <h4>
+                        Xiaomi
+                     </h4>
+                     <p>
+                        Xiaomi smart watches are produced by MI company.
+                     </p>
+                  </div>
+               </div>
+               <div class="brand-card">
+                  <div class="br-card-left">
+                     <img src="images/fitbit.png">
+                  </div>
+                  <div class="br-card-right">
+                     <h4>
+                        FitBit
+                     </h4>
+                     <p>
+                        FitBit smart watches are best for there health and fitness features.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="product">
+         <div class="container product">
+            <div class="product-text">
+               <p>
+                  Find your favourite smart watch.
+               </p>
+               <h3>Our Latest Products</h3>
+            </div>
+            <div class="product-item">
+               <div class="product-card">
+                  <div class="pro-card-img">
+                     <img src="images/product1.png">
+                  </div>
+                  <h4>Apple Smart I</h4>
+                  <img src="images/star.svg">
+                  <div class="watch-price">
+                     <p>$300.00</p>
+                     <h4>$255.00</h4>
+                  </div>
+               </div>
+               <div class="product-card">
+                  <div class="pro-card-img">
+                     <img src="images/product2.png">
+                  </div>
+                  <h4>Apple Smart II</h4>
+                  <img src="images/star.svg">
+                  <div class="watch-price">
+                     <p>$300.00</p>
+                     <h4>$255.00</h4>
+                  </div>
+               </div>
+               <div class="product-card">
+                  <div class="pro-card-img">
+                     <img src="images/product3.png">
+                  </div>
+                  <h4>Apple Smart III</h4>
+                  <img src="images/star.svg">
+                  <div class="watch-price">
+                     <p>$300.00</p>
+                     <h4>$255.00</h4>
+                  </div>
+               </div>
+               <div class="product-card">
+                  <div class="pro-card-img">
+                     <img src="images/product4.png">
+                  </div>
+                  <h4>Apple Smart IV</h4>
+                  <img src="images/star.svg">
+                  <div class="watch-price">
+                     <p>$450.00</p>
+                     <h4>$399.00</h4>
+                  </div>
+               </div>
+               <div class="product-card">
+                  <div class="pro-card-img">
+                     <img src="images/product5.png">
+                  </div>
+                  <h4>Samsung Watch Pro</h4>
+                  <img src="images/star.svg">
+                  <div class="watch-price">
+                     <p>$300.00</p>
+                     <h4>$255.00</h4>
+                  </div>
+               </div>
+               <div class="product-card">
+                  <div class="pro-card-img">
+                     <img src="images/product6.png">
+                  </div>
+                  <h4>Fitbit Max 1</h4>
+                  <img src="images/star.svg">
+                  <div class="watch-price">
+                     <h4>$155.00</h4>
+                  </div>
+               </div>
+            </div>
+            <button>
+               <a href="#">View More</a>
+            </button>
+         </div>
+      </section>
+      <section id="about">
+         <div class="container">
+            <div class="about-text">
+               <p>
+                  Here are our some of the best clients.
+               </p>
+               <h3>What People Say About Us</h3>
+            </div>
+            <div class="owl-carousel owl-theme">
+               <div class="item">
+                  <div class="item-img">
+                     <img src="images/carousel1.png">
+                  </div>
+                  <div class="item-text">
+                     <h4>
+                        Hamza Faizi
+                     </h4>
+                     <p>
+                        Don’t waste time, just order! This is the best website to puschase smart watches.
+                     </p>
+                     <img src="images/star1.svg">
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="item-img">
+                     <img src="images/carousel2.png">
+                  </div>
+                  <div class="item-text">
+                     <h4>
+                        Hafiz Huzaifa
+                     </h4>
+                     <p>
+                        I’ve been purchasing smart watches of Mohid for a long time. All the products are good quality.
+                     </p>
+                     <img src="images/star1.svg">
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="item-img">
+                     <img src="images/carousel1.png">
+                  </div>
+                  <div class="item-text">
+                     <h4>
+                        Hamza Faizi
+                     </h4>
+                     <p>
+                        Don’t waste time, just order! This is the best website to puschase smart watches.
+                     </p>
+                     <img src="images/star1.svg">
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="item-img">
+                     <img src="images/carousel2.png">
+                  </div>
+                  <div class="item-text">
+                     <h4>
+                        Hafiz Huzaifa
+                     </h4>
+                     <p>
+                        I’ve been purchasing smart watches of Mohid for a long time. All the products are good quality.
+                     </p>
+                     <img src="images/star1.svg">
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="item-img">
+                     <img src="images/carousel1.png">
+                  </div>
+                  <div class="item-text">
+                     <h4>
+                        Hamza Faizi
+                     </h4>
+                     <p>
+                        Don’t waste time, just order! This is the best website to puschase smart watches.
+                     </p>
+                     <img src="images/star1.svg">
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="item-img">
+                     <img src="images/carousel2.png">
+                  </div>
+                  <div class="item-text">
+                     <h4>
+                        Hafiz Huzaifa
+                     </h4>
+                     <p>
+                        I’ve been purchasing smart watches of Mohid for a long time. All the products are good quality.
+                     </p>
+                     <img src="images/star1.svg">
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="item-img">
+                     <img src="images/carousel1.png">
+                  </div>
+                  <div class="item-text">
+                     <h4>
+                        Hamza Faizi
+                     </h4>
+                     <p>
+                        Don’t waste time, just order! This is the best website to puschase smart watches.
+                     </p>
+                     <img src="images/star1.svg">
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="item-img">
+                     <img src="images/carousel2.png">
+                  </div>
+                  <div class="item-text">
+                     <h4>
+                        Hafiz Huzaifa
+                     </h4>
+                     <p>
+                        I’ve been purchasing smart watches of Mohid for a long time. All the products are good quality.
+                     </p>
+                     <img src="images/star1.svg">
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="item-img">
+                     <img src="images/carousel1.png">
+                  </div>
+                  <div class="item-text">
+                     <h4>
+                        Hamza Faizi
+                     </h4>
+                     <p>
+                        Don’t waste time, just order! This is the best website to puschase smart watches.
+                     </p>
+                     <img src="images/star1.svg">
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="item-img">
+                     <img src="images/carousel2.png">
+                  </div>
+                  <div class="item-text">
+                     <h4>
+                        Hafiz Huzaifa
+                     </h4>
+                     <p>
+                        I’ve been purchasing smart watches of Mohid for a long time. All the products are good quality.
+                     </p>
+                     <img src="images/star1.svg">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="contact">
+         <div class="container contact">
+            <div class="contact-left">
+               <h3>Subscribe To Newsletter</h3>
+               <p>
+                  Get free guide about smart watches daily.
+               </p>
+               <div class="contact-inp">
+                  <input type="text" placeholder="Enter Email Address">
+                  <button>Subscribe</button>
+               </div>
+            </div>
+            <div class="contact-right">
+               <img src="images/contact.png">
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer id="footer">
+      <div class="container footer">
+         <h3>Copyright @ 2022 | Mohid</h3>
+      </div>
+   </footer>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="js/main.js"></script>
+</body>
+
+</html>
